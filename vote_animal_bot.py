@@ -1,26 +1,24 @@
 import pyautogui
 import time
-loop = False
-pyautogui.moveTo(348, 1060, 0.1)
-pyautogui.click(348, 1060)
-pyautogui.moveTo(234, 951, 0.1)
-pyautogui.click(234, 951)
-pyautogui.moveTo(736, 596, 0.1)
-# loop = True
-while loop == True:
-    pyautogui.click(736, 596)
-    pyautogui.write("Donnadio Mark", interval=0.1)
-    pyautogui.moveTo(716, 746, 0.1)
-    pyautogui.write("donnadio_mark@student.mahoningctc.com", interval=0.1)
-    pyautogui.moveTo(675, 911, 0.1)
-    pyautogui.click(675, 911)
-    pyautogui.scroll(100)
-    pyautogui.moveTo(685, 864, 0.1)
-    pyautogui.click(685, 864,)
-    pyautogui.moveTo(707, 452)
-    pyautogui.click(707, 452)
+loop = True
 
-while True:
-    current_mouse_position = pyautogui.position()
+while loop == True:
     time.sleep(1)
-    print(current_mouse_position)
+    pyautogui.moveTo(x=351, y=363, duration=0.5)
+    pyautogui.click(x=351, y=363)
+    pyautogui.write("Donnadio Mark",)
+    pyautogui.moveTo(x=349, y=444, duration=0)
+    pyautogui.click(x=349, y=444)
+    pyautogui.write("donnadio_mark@student.mahoningctc.com",)
+    pyautogui.moveTo(x=325, y=518, duration=0)
+    pyautogui.click(x=325, y=518)
+    pyautogui.moveTo(x=328, y=833, duration=0)
+    pyautogui.click(x=328, y=833)
+    pyautogui.moveTo(x=356, y=279, duration=1)
+    time.sleep(1)
+    pyautogui.click(x=356, y=279)
+
+# while True:
+#     current_mouse_position = pyautogui.position()
+#     time.sleep(0.5)
+#     print(current_mouse_position)
